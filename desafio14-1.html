@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Aula 13 &hearts;</title>
+
+    <link rel="shortcut icon" href="IMAGENS/icons8-super-mario-16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="desafio14-1.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <img class="logo" src="IMAGENS/5f569b8b4322de00046d577b.png" alt="">
+        </div>
+                    
+        <span id="hamburguer" class="simbolo">
+               <img class="menu" src="IMAGENS/menu_FILL0_wght400_GRAD0_opsz48.png" alt="">
+         </span>
+         <nav id="itens_menu">
+            <ul>
+                <li>MENU 01</li>
+                <li>MENU 02</li>
+                <li>MENU 03</li>
+                <li>MENU 04</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="galeria">
+            <a href="desafio14-2.html" target="_blank">GALERIA</a>
+        </div>
+    </main>
+    <footer>
+        <img class="redes" src="IMAGENS/whatsapp_1384007.png" alt="">
+        <img class="redes" src="IMAGENS/facebook_4494464.png" alt="">
+        <img class="redes" src="IMAGENS/instagram_4494468.png" alt="">
+        <img class="redes" src="IMAGENS/linkedin.png" alt="">
+        <img class="redes" src="IMAGENS/github.png" alt="">
+        <p> &hearts; Elas na Tech 2023 &hearts;</p>
+    </footer>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+        
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block')
+            {itens_menu.classList.remove('show');}
+            else {itens_menu.classList.toggle('show');}
+        }
+
+    </script>
+    
+</body>
+</html>

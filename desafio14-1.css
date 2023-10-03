@@ -1,0 +1,157 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+.cabecalho{
+    background-color: black;
+    margin: auto;
+}
+div{
+    margin: auto;
+    padding: 1em;
+}
+.logo{
+    width: 6em;
+}
+#hamburguer{
+    display: block;
+    background-color: rgb(223, 150, 42);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.menu{
+    background-color: rgb(223, 150, 42);
+    width: 2em;
+}
+#itens_menu{
+    display: none;
+}
+#itens_menu.show{
+    display: block;
+}
+ul{
+    list-style: none;
+    display: block;
+    margin: auto;
+    padding: 0;   
+}
+li{
+    color: rgb(212, 109, 24);
+    margin:auto;
+    padding: .8em;
+    font-size: .8em;
+    font-weight: 550;
+    letter-spacing: .15em;
+    cursor: pointer;
+    
+}
+li:hover{
+    background-color: rgb(241, 181, 131);
+    color: black;
+}
+main{
+    background-image: url(IMAGENS/desktop-wallpaper-super-mario-bros-chromebook-ready-for-mario-bros.jpg);
+    height: 420px;
+    background-position: right;
+    background-size: auto;  
+    margin: 0; 
+    text-align: center;
+    display: flex;
+}
+
+.galeria a{
+    background-color: rgb(187, 99, 27);
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    border-radius:14px;  
+}
+.galeria a:hover{
+    background-color: black;
+    color:rgb(212, 109, 24) ;
+}
+footer{
+    background-color: rgb(241, 181, 131);
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6em;
+}
+.redes{
+    width: 2.8em;   
+    cursor: pointer; 
+}
+.redes:hover{
+    transform: scale(1.1);
+}
+footer p{
+    font-size: 1em;
+    letter-spacing: .1em;
+    margin: .8em;
+}
+
+@media screen and (min-width: 48em) {
+    html{
+        width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+    
+    .cabecalho{
+        text-align: left;
+        display: flex;
+        gap: 25%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header div{
+        margin: 0;
+    }
+    .logo{
+        width: 6em;
+    }
+    #hamburguer{
+        display: none;
+    }
+    #itens_menu{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    ul{
+        width:100% ;
+        display: flex;
+        gap: .5em;
+        padding-top: 1.4em;
+        box-sizing: border-box;
+        
+   
+    }
+    li{
+        width: 100%;
+        font-size: .8em;
+        border-radius: 5px;
+        padding: .8em;
+        text-align: center;
+        margin-right: .5em;
+       
+    }
+    
+    footer{
+        display: block;
+    }
+    .redes{
+        margin: .3em;
+    }
+    footer p{
+        margin: .8em;
+    }
+    
+}
